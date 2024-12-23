@@ -1,0 +1,31 @@
+{
+  "name": "site-utils",
+  "version": "0.0.1",
+  "description": "site-utils",
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanqory/site-utils.git"
+  },
+  "keywords": [
+    "tanqory"
+  ],
+  "author": "TANQ PTE. LTD.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanqory/site-utils/issues"
+  },
+  "homepage": "https://github.com/tanqory/site-utils#readme"
+}
