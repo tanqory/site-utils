@@ -1,4 +1,3 @@
-
 # Site Form Config
 
 A simple configuration package for site form IDs. This package provides predefined constants for various site settings and form IDs to be used in your application.
@@ -8,7 +7,7 @@ A simple configuration package for site form IDs. This package provides predefin
 Install the package using npm:
 
 ```bash
-npm install site-form-config
+npm install @tanqory/site-utils
 ```
 
 ## Usage
@@ -16,7 +15,7 @@ npm install site-form-config
 Import the module in your project:
 
 ```javascript
-const { SiteFormConfig } = require('site-form-config');
+const { SiteFormConfig } = require("@tanqory/site-utils");
 
 // Example usage
 console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
