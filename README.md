@@ -19,7 +19,7 @@ const { SiteFormConfig } = require("@tanqory/site-utils");
 
 // Example usage
 console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
-// Output: SITES_SETTING_FORM_ID_CREATE_SITE
+// Output: "SITES_SETTING_FORM_ID_CREATE_SITE"
 ```
 
 ### TypeScript:
@@ -27,26 +27,14 @@ console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
 ```typescript
 import { SiteFormConfig } from "@tanqory/site-utils";
 
-// Example usage
+// Example usage with type checking
 console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
-// Output: SITES_SETTING_FORM_ID_CREATE_SITE
-```
-
-## TypeScript Support
-
-This package fully supports TypeScript. Type definitions are included, so you can enjoy type safety and autocompletion.
-
-Example usage in a TypeScript project:
-
-```typescript
-import { SiteFormConfig } from "@tanqory/site-utils";
-
-console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
+// Output: "SITES_SETTING_FORM_ID_CREATE_SITE"
 ```
 
 ## Available Constants
 
-The package includes the following constants:
+The package includes the following form ID constants:
 
 - `SITES_SETTING_FORM_ID_CREATE_SITE`
 - `SITES_SETTING_FORM_ID_GENERALE`
@@ -73,23 +61,32 @@ The package includes the following constants:
 - `SITES_SETTING_FORM_ID_PRIVACY_DATA`
 - `SITES_SETTING_FORM_ID_POLICY_DATA`
 
-## File Structure
-
-The package structure is as follows:
+## Project Structure
 
 ```
 src/
-├── utils/
-│   └── site.form.config.ts
+├── index.ts                 # Package entry point
+└── utils/
+    └── site.form.config.ts  # Form ID constants and types
 dist/
 ├── index.js
-├── utils/
-│   └── site.form.config.js
+├── index.d.ts
+└── utils/
+    ├── site.form.config.js
+    └── site.form.config.d.ts
 ```
 
-- **`site.form.config.ts`**: Contains all the predefined constants.
-- **`index.ts`**: The entry point of the package in TypeScript.
-- **`dist/`**: Contains compiled JavaScript files for production.
+## TypeScript Support
+
+This package includes TypeScript declarations and provides full type safety. The type definitions are automatically included when you install the package.
+
+## Development
+
+To build the package:
+
+```bash
+npm run build
+```
 
 ## License
 
