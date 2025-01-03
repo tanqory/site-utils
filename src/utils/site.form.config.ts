@@ -1,6 +1,6 @@
-type SiteFormConfigType = {
+interface SiteFormConfigType {
   [key: string]: string;
-};
+}
 
 const SiteFormConfig: SiteFormConfigType = {
   SITES_SETTING_FORM_ID_CREATE_SITE: "SITES_SETTING_FORM_ID_CREATE_SITE",
