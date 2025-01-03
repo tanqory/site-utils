@@ -12,7 +12,7 @@ npm install @tanqory/site-utils
 
 ## Usage
 
-Import the module in your project:
+### JavaScript:
 
 ```javascript
 const { SiteFormConfig } = require("@tanqory/site-utils");
@@ -20,6 +20,28 @@ const { SiteFormConfig } = require("@tanqory/site-utils");
 // Example usage
 console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
 // Output: SITES_SETTING_FORM_ID_CREATE_SITE
+```
+
+### TypeScript:
+
+```typescript
+import { SiteFormConfig } from "@tanqory/site-utils";
+
+// Example usage
+console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
+// Output: SITES_SETTING_FORM_ID_CREATE_SITE
+```
+
+## TypeScript Support
+
+This package fully supports TypeScript. Type definitions are included, so you can enjoy type safety and autocompletion.
+
+Example usage in a TypeScript project:
+
+```typescript
+import { SiteFormConfig } from "@tanqory/site-utils";
+
+console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
 ```
 
 ## Available Constants
@@ -58,12 +80,16 @@ The package structure is as follows:
 ```
 src/
 ├── utils/
+│   └── site.form.config.ts
+dist/
+├── index.js
+├── utils/
 │   └── site.form.config.js
-index.js
 ```
 
-- **`site.form.config.js`**: Contains all the predefined constants.
-- **`index.js`**: The entry point of the package, exporting all available modules.
+- **`site.form.config.ts`**: Contains all the predefined constants.
+- **`index.ts`**: The entry point of the package in TypeScript.
+- **`dist/`**: Contains compiled JavaScript files for production.
 
 ## License
 

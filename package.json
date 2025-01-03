@@ -1,19 +1,21 @@
 {
   "name": "@tanqory/site-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "site-utils",
-  "dependencies": {},
-  "devDependencies": {
-    "@eslint/js": "^9.16.0",
-    "eslint": "^9.16.0",
-    "globals": "^15.13.0"
-  },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "node index.js",
+    "start": "node dist/index.js",
+    "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "typescript": "^5.7.2"
   },
   "repository": {
     "type": "git",

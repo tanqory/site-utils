@@ -1,4 +1,6 @@
-module.exports = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const SiteFormConfig = {
     SITES_SETTING_FORM_ID_CREATE_SITE: "SITES_SETTING_FORM_ID_CREATE_SITE",
     SITES_SETTING_FORM_ID_GENERALE: "SITES_SETTING_FORM_ID_GENERALE",
     SITES_SETTING_FORM_ID_SETUP_GUIDE: "SITES_SETTING_FORM_ID_SETUP_GUIDE",
@@ -24,3 +26,4 @@ module.exports = {
     SITES_SETTING_FORM_ID_PRIVACY_DATA: "SITES_SETTING_FORM_ID_PRIVACY_DATA",
     SITES_SETTING_FORM_ID_POLICY_DATA: "SITES_SETTING_FORM_ID_POLICY_DATA",
 };
+exports.default = SiteFormConfig;
