@@ -51,6 +51,7 @@ interface SiteFormConfigType {
     SITES_FORM_ID_PRODUCT_TRANSFERS: string;
     SITES_FORM_ID_PRODUCT_VARIANTS: string;
     SITES_FORM_ID_ONLINE_STORE_BLOG: string;
+    SITES_FORM_ID_PRODUCT_PURCHASE_SUPPLIER: string;
 }
 declare const SiteFormConfig: SiteFormConfigType;
 export default SiteFormConfig;
