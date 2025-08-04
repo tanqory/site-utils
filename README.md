@@ -1,6 +1,14 @@
-# Site Form Config
+# @tanqory/site-utils
 
-A simple configuration package for site form IDs. This package provides predefined constants for various site settings and form IDs to be used in your application.
+A TypeScript utility package that provides predefined constants for site form IDs and configurations. This package is designed to centralize form ID management for Tanqory applications, ensuring consistency across different modules and components.
+
+## Features
+
+- ✅ **TypeScript Support**: Full type safety and IntelliSense support
+- 🔧 **Centralized Configuration**: Single source of truth for form IDs
+- 📦 **Lightweight**: Zero dependencies, minimal bundle size
+- 🚀 **Easy Integration**: Simple import and usage
+- 🔄 **Consistent Naming**: Standardized naming conventions across all form IDs
 
 ## Installation
 
@@ -43,10 +51,11 @@ console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
 ### Settings Form IDs
 
 - `SITES_SETTING_FORM_ID_CREATE_SITE`
-- `SITES_SETTING_FORM_ID_GENERALE`
+- `SITES_SETTING_FORM_ID_GENERAL`
 - `SITES_SETTING_FORM_ID_SETUP_GUIDE`
 - `SITES_SETTING_FORM_ID_PLAN`
 - `SITES_SETTING_FORM_ID_BILLING`
+- `SITES_SETTING_FORM_ID_SUBSCRIPTION`
 - `SITES_SETTING_FORM_ID_USERS_PERMISSIONS`
 - `SITES_SETTING_FORM_ID_PAYMENTS`
 - `SITES_SETTING_FORM_ID_CHECKOUT`
@@ -66,6 +75,12 @@ console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
 - `SITES_SETTING_FORM_ID_LANGUAGES_DATA`
 - `SITES_SETTING_FORM_ID_PRIVACY_DATA`
 - `SITES_SETTING_FORM_ID_POLICY_DATA`
+- `SITES_SETTING_FORM_ID_LOCATION_DETAILS`
+- `SITES_SETTING_FORM_ID_SHIPPING_PROFILES`
+- `SITES_SETTING_FORM_ID_SHIPPING_ZONES`
+- `SITES_SETTING_FORM_ID_MARKETS_RULES`
+- `SITES_SETTING_FORM_ID_SHIPPING_LOCATIONS`
+- `SITES_SETTING_FORM_ID_TAXES_REGIONAL`
 
 ### Content and Store Form IDs
 
@@ -88,6 +103,12 @@ console.log(SiteFormConfig.SITES_SETTING_FORM_ID_CREATE_SITE);
 - `SITES_FORM_ID_PRODUCT_INVENTORY`
 - `SITES_FORM_ID_PRODUCT_PURCHASE`
 - `SITES_FORM_ID_PRODUCT_TRANSFERS`
+- `SITES_FORM_ID_PRODUCT_VARIANTS`
+- `SITES_FORM_ID_ONLINE_STORE_BLOG`
+- `SITES_FORM_ID_PRODUCT_PURCHASE_SUPPLIER`
+- `SITES_FORM_ID_ANALYTICS_REPORTS`
+- `SITES_FORM_ID_TIMELINE`
+- `SITES_FORM_ID_PRODUCT_INVENTORY_HISTORY`
 
 ## Project Structure
 
@@ -110,18 +131,69 @@ This package includes TypeScript declarations and provides full type safety. The
 
 ## Development
 
-To build the package:
+### Prerequisites
+
+- Node.js 16+
+- TypeScript 5.7+
+- npm or yarn
+
+### Building the Package
 
 ```bash
 npm run build
 ```
 
-To publish the package:
+### Linting
 
 ```bash
-npm publish
+npm run lint
 ```
+
+### Publishing
+
+#### To npm registry:
+
+```bash
+npm run publish:npm
+```
+
+#### To GitHub Packages:
+
+```bash
+npm run publish:github
+```
+
+#### To both registries:
+
+```bash
+npm run publish:all
+```
+
+### Development Scripts
+
+- `npm run build` - Compile TypeScript to JavaScript
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Run ESLint with auto-fix
+- `npm start` - Run the compiled package
+- `npm test` - Run tests (to be implemented)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Version History
+
+- **v0.0.29** - Current version with enhanced form ID support
+- Latest updates include additional shipping, location, and analytics form IDs
+
+## Author
+
+**TANQ PTE. LTD.**
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
