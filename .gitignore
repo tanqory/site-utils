@@ -7,3 +7,4 @@ test.js
 .npmrc.npm
 README-PUBLISH.md
 README-PUBLIC.md
+.npmrc.backup
