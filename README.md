@@ -4,10 +4,16 @@ A simple configuration package for site form IDs. This package provides predefin
 
 ## Installation
 
-Install the package using npm:
+### From npm (recommended):
 
 ```bash
 npm install @tanqory/site-utils
+```
+
+### From GitHub Packages:
+
+```bash
+npm install @tanqory/site-utils --registry https://npm.pkg.github.com
 ```
 
 ## Usage

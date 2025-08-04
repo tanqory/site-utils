@@ -7,6 +7,10 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "publish:npm": "npm publish --registry https://registry.npmjs.org/",
+    "publish:github": "npm publish --registry https://npm.pkg.github.com/",
+    "publish:all": "npm run publish:npm && npm run publish:github",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,9 +24,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tanqory/site-utils.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "tanqory"
