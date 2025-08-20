@@ -56,6 +56,7 @@ interface SiteFormConfigType {
   SITES_FORM_ID_PRODUCT_PURCHASE_SUPPLIER: string;
   SITES_FORM_ID_ANALYTICS_REPORTS: string;
   SITES_FORM_ID_TIMELINE: string;
+  SITES_FORM_ID_TAGS: string;
   //   [key: string]: string;
 }
 
@@ -130,6 +131,7 @@ const SiteFormConfig: SiteFormConfigType = {
     "SITES_FORM_ID_PRODUCT_PURCHASE_SUPPLIER",
   SITES_FORM_ID_ANALYTICS_REPORTS: "SITES_FORM_ID_ANALYTICS_REPORTS",
   SITES_FORM_ID_TIMELINE: "SITES_FORM_ID_TIMELINE",
+  SITES_FORM_ID_TAGS: "SITES_FORM_ID_TAGS",
 };
 
 export default SiteFormConfig;
