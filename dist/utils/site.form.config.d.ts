@@ -30,7 +30,6 @@ interface SiteFormConfigType {
     SITES_SETTING_FORM_ID_MARKETS_RULES: string;
     SITES_SETTING_FORM_ID_SHIPPING_LOCATIONS: string;
     SITES_SETTING_FORM_ID_TAXES_REGIONAL: string;
-    SITES_FORM_ID_PRODUCT_INVENTORY_HISTORY: string;
     SITES_FORM_ID_CONTENT_FILE: string;
     SITES_FORM_ID_CONTENT_META_OBJECTS: string;
     SITES_FORM_ID_CUSTOMER: string;
@@ -56,6 +55,8 @@ interface SiteFormConfigType {
     SITES_FORM_ID_ANALYTICS_REPORTS: string;
     SITES_FORM_ID_TIMELINE: string;
     SITES_FORM_ID_TAGS: string;
+    SITES_FORM_ID_PRODUCT_VENDOR: string;
+    SITES_FORM_ID_PRODUCT_INVENTORY_HISTORY: string;
 }
 declare const SiteFormConfig: SiteFormConfigType;
 export default SiteFormConfig;
